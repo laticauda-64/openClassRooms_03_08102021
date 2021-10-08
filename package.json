@@ -1,0 +1,46 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux",
+  "main": " composer leur propre menu et réduire leur temps d’attente dans les",
+  "dependencies": {
+    "anymatch": "^3.1.2",
+    "binary-extensions": "^2.2.0",
+    "braces": "^3.0.2",
+    "chokidar": "^3.5.2",
+    "fill-range": "^7.0.1",
+    "fsevents": "^2.3.2",
+    "glob-parent": "^5.1.2",
+    "is-binary-path": "^2.1.0",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.0",
+    "readdirp": "^3.6.0",
+    "to-regex-range": "^5.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.42.1"
+  },
+  "scripts": {
+    "test": "éparé à l’avance.",
+    "sass": "sass --watch ./src/sass/:./public/css/ --style=compressed --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laticauda-64/yoannboyditlassablere_3_08102021.git"
+  },
+  "keywords": [
+    "openclassrooms",
+    "p3",
+    "css",
+    "animations"
+  ],
+  "author": "Yoann BDL",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/laticauda-64/yoannboyditlassablere_3_08102021/issues"
+  },
+  "homepage": "https://github.com/laticauda-64/yoannboyditlassablere_3_08102021#readme"
+}
