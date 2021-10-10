@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OhMyFood</title>
-    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/pages/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -14,7 +21,7 @@
     <main>
       <div class="search">
         <form action="#">
-          <i></i>
+          <i class="fas fa-map-marker-alt"></i>
           <select name="restaurants" id="restaurants">
             <option value="">Choisissez un restaurant</option>
             <option value="" selected>Paris, Belleville</option>
@@ -23,22 +30,39 @@
       </div>
       <section class="disclaimer">
         <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
-        <a href="#">Explorer nos restaurants</a>
+        <p>
+          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        </p>
+        <a href="#" class="color-button">Explorer nos restaurants</a>
       </section>
       <section class="guide">
         <h1>Fonctionnement</h1>
         <ol>
-          <li><a href="#">Choisissez un restaurant</a></li>
-          <li><a href="#">Composez votre menu</a></li>
-          <li><a href="#">Dégustez au restaurant</a></li>
+          <li>
+            <a href="#"
+              ><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un
+              restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span>2</span><i class="fas fa-list-ul"></i>Composez votre
+              menu</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span>3</span><i class="fas fa-store"></i>Dégustez au
+              restaurant</a
+            >
+          </li>
         </ol>
       </section>
       <section class="results">
         <h1>Restaurants</h1>
         <ul>
-          <a href="">
-            <li>
+          <li>
+            <a href="">
               <img src="" alt="" />
               <div class="desc">
                 <div>
@@ -47,10 +71,10 @@
                 </div>
                 <div><i></i></div>
               </div>
-            </li>
-          </a>
-          <a href="">
-            <li>
+            </a>
+          </li>
+          <li>
+            <a href="">
               <img src="" alt="" />
               <div class="desc">
                 <div>
@@ -59,10 +83,10 @@
                 </div>
                 <div><i></i></div>
               </div>
-            </li>
-          </a>
-          <a href="">
-            <li>
+            </a>
+          </li>
+          <li>
+            <a href="">
               <img src="" alt="" />
               <div class="desc">
                 <div>
@@ -71,10 +95,10 @@
                 </div>
                 <div><i></i></div>
               </div>
-            </li>
-          </a>
-          <a href="">
-            <li>
+            </a>
+          </li>
+          <li>
+            <a href="">
               <img src="" alt="" />
               <div class="desc">
                 <div>
@@ -83,8 +107,8 @@
                 </div>
                 <div><i></i></div>
               </div>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </section>
     </main>

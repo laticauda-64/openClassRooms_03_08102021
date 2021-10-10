@@ -1,0 +1,10 @@
+@import "./utils/reset";
+@import "./utils/variables";
+@import "./layouts/header";
+@import "./components/color-button";
+
+body {
+  font-family: $font-text;
+  display: flex;
+  flex-direction: column;
+}

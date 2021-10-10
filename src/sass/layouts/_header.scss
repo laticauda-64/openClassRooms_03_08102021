@@ -1,0 +1,10 @@
+header {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-family: $font-logo;
+    font-size: 30px;
+  }
+}
