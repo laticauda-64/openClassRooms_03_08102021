@@ -1,0 +1,28 @@
+footer {
+  background-color: $light-black;
+  color: #fff;
+
+  .title {
+    font-family: $font-logo;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  ul {
+    padding: 20px;
+  }
+
+  li {
+    padding: 4px 0;
+  }
+
+  i {
+    width: 20px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
