@@ -1,4 +1,18 @@
 header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 25px;
+  }
+
+  .nav {
+    position: absolute;
+    left: 20px;
+  }
+
   .logo {
     display: flex;
     align-items: center;
