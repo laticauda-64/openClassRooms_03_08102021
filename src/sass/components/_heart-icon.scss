@@ -1,0 +1,16 @@
+@import "../animations/bumping-heart";
+
+.heart-icon {
+  :hover {
+    animation: bumping-heart 1s ease infinite;
+  }
+  :hover::before {
+    cursor: pointer;
+    font-weight: 900;
+    background: linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+}

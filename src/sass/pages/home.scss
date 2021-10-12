@@ -158,13 +158,6 @@ main > * {
     width: 100%;
   }
 
-  i {
-    font-size: 25px;
-    ::before {
-      background: linear-gradient(#ff7ad9, #9256dc);
-    }
-  }
-
   .desc {
     background-color: #fff;
     border-bottom-left-radius: 15px;
@@ -178,5 +171,6 @@ main > * {
   }
   .icon {
     margin-left: auto;
+    font-size: 25px;
   }
 }
