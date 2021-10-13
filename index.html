@@ -19,107 +19,133 @@
       <div class="logo"><a href="#">ohmyfood</a></div>
     </header>
     <main>
-      <div class="search">
-        <form action="#">
+      <div class="search search--gray">
+        <form class="search__form" action="#">
           <i class="fas fa-map-marker-alt"></i>
-          <select name="restaurants" id="restaurants">
+          <select
+            class="search__form__select search__form__select--gray"
+            name="restaurants"
+            id="restaurants"
+          >
             <option value="">Choisissez un restaurant</option>
             <option value="" selected>Paris, Belleville</option>
           </select>
         </form>
       </div>
       <section class="disclaimer">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>
+        <h1 class="disclaimer__title">Réservez le menu qui vous convient</h1>
+        <p class="disclaimer__desc">
           Découvrez des restaurants d'exception, séléctionnés par nos soins.
         </p>
         <a href="#" class="color-button">Explorer nos restaurants</a>
       </section>
       <section class="guide">
-        <h1>Fonctionnement</h1>
-        <ol>
-          <li>
+        <h2>Fonctionnement</h2>
+        <ol class="guide__list">
+          <li class="guide__list__item">
             <a href="#restaurants"
-              ><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un
-              restaurant</a
+              ><span class="guide__list__item__icon">1</span
+              ><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</a
             >
           </li>
-          <li>
+          <li class="guide__list__item">
             <a href="#"
-              ><span>2</span><i class="fas fa-list-ul"></i>Composez votre
-              menu</a
+              ><span class="guide__list__item__icon">2</span
+              ><i class="fas fa-list-ul"></i>Composez votre menu</a
             >
           </li>
-          <li>
+          <li class="guide__list__item">
             <a href="#"
-              ><span>3</span><i class="fas fa-store"></i>Dégustez au
-              restaurant</a
+              ><span class="guide__list__item__icon">3</span
+              ><i class="fas fa-store"></i>Dégustez au restaurant</a
             >
           </li>
         </ol>
       </section>
       <section id="restaurants" class="results">
-        <h1>Restaurants</h1>
-        <ul>
-          <li class="new">
+        <h2 class="results__title">Restaurants</h2>
+        <ul class="results__list">
+          <li class="results__list__card new">
             <a href="./pages/palette-du-gout.html">
               <img
                 src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="La palette du goût"
               />
-              <div class="desc">
+              <div class="results__list__card__desc">
                 <div>
-                  <h4>La palette du goût</h4>
-                  <span class="location">Ménilmontant</span>
+                  <h4 class="results__list__card__desc__title">
+                    La palette du goût
+                  </h4>
+                  <span class="results__list__card__desc__location"
+                    >Ménilmontant</span
+                  >
                 </div>
-                <div class="icon heart-icon">
+                <div class="heart-icon heart-icon--home">
                   <i class="far fa-heart"></i>
                 </div>
               </div>
             </a>
           </li>
-          <li class="new">
+          <li class="results__list__card new">
             <a href="./pages/la-note-enchantee.html">
               <img
                 src="./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                 alt="La note enchantée"
               />
-              <div class="desc">
+              <div class="results__list__card__desc">
                 <div>
-                  <h4>La note enchantée</h4>
-                  <span class="location">Charonne</span>
+                  <h4 class="results__list__card__desc__title">
+                    La note enchantée
+                  </h4>
+                  <span class="results__list__card__desc__location"
+                    >Charonne</span
+                  >
                 </div>
-                <div class="icon heart-icon"><i class="far fa-heart"></i></div>
+                <div class="heart-icon heart-icon--home">
+                  <i class="far fa-heart"></i>
+                </div>
               </div>
             </a>
           </li>
-          <li>
+          <li class="results__list__card">
             <a href="./pages/a-la-francaise.html">
               <img
                 src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt="A la francaise"
               />
-              <div class="desc">
+              <div class="results__list__card__desc">
                 <div>
-                  <h4>À la française</h4>
-                  <span class="location">Cité Rouge</span>
+                  <h4 class="results__list__card__desc__title">
+                    À la française
+                  </h4>
+                  <span class="results__list__card__desc__location"
+                    >Cité Rouge</span
+                  >
                 </div>
-                <div class="icon heart-icon"><i class="far fa-heart"></i></div>
+                <div class="heart-icon heart-icon--home">
+                  <i class="far fa-heart"></i>
+                </div>
               </div>
             </a>
           </li>
-          <li>
+          <li class="results__list__card">
             <a href="./pages/le-delice-des-sens.html">
               <img
                 src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="Le délice des sens"
               />
-              <div class="desc">
+              <div class="results__list__card__desc">
                 <div>
-                  <h4>Le délice des sens</h4>
-                  <span class="location">Folie-Méricourt</span>
+                  <h4 class="results__list__card__desc__title">
+                    Le délice des sens
+                  </h4>
+                  <span class="results__list__card__desc__location"
+                    >Folie-Méricourt</span
+                  >
                 </div>
-                <div class="icon heart-icon"><i class="far fa-heart"></i></div>
+                <div class="heart-icon heart-icon--home">
+                  <i class="far fa-heart"></i>
+                </div>
               </div>
             </a>
           </li>

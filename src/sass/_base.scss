@@ -2,8 +2,10 @@
 @import "./utils/variables";
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./layouts/forms";
 @import "./components/color-button";
 @import "./components/heart-icon";
+@import "./animations/rotate";
 
 body {
   font-family: $font-text;
