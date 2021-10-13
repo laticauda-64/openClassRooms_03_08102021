@@ -1,0 +1,10 @@
+// Rotation des icones "checked" dans la liste des plats
+
+@keyframes rotate {
+  0% {
+    transform: translate(40px) rotate(90deg);
+  }
+  100% {
+    transform: translate(0) rotate(720deg);
+  }
+}

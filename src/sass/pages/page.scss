@@ -1,43 +1,45 @@
 @import "../base";
+@import "../animations/rotate";
 
-main {
+.page {
   position: relative;
   background-color: $light-gray;
 
-  img {
+  .cover-img {
     max-height: 300px;
     width: 100%;
   }
 
   .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: inherit;
     position: relative;
     top: -40px;
-
     padding: 25px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-radius: 40px 40px 0 0;
 
-    .restaurant-name {
+    & > * {
+      width: 100%;
+    }
+
+    &__restaurant-name {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 12px 0;
 
-      h1 {
+      & > * {
         font-family: $font-logo;
-      }
-
-      h1,
-      i {
         font-size: 28px;
       }
     }
 
-    ul {
+    &__dishes {
       margin-bottom: 30px;
 
-      .meal-type {
+      &__category {
         font-weight: 300;
         margin: 10px 0;
 
@@ -51,17 +53,7 @@ main {
         }
       }
 
-      h4 {
-        font-size: 18px;
-      }
-
-      p {
-        font-size: 16px;
-        font-weight: 300;
-        padding: 5px 0 0 0;
-      }
-
-      .dish {
+      &__item {
         position: relative;
         overflow: hidden;
         display: flex;
@@ -72,93 +64,80 @@ main {
         border-radius: 15px;
         box-shadow: 0px 5px 10px #e5e5e5;
         cursor: pointer;
-      }
 
-      .checked-icon {
-        position: absolute;
-        top: 0;
-        right: -80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $tertiary-color;
-        height: 100%;
-        width: 80px;
-        transition: transform 300ms;
+        &:hover {
+          .menu__dishes__item__checked-icon {
+            transform: translateX(-80px);
 
-        i {
-          font-size: 25px;
-          color: #fff;
+            i {
+              animation: rotate 300ms 50ms both;
+            }
+          }
+
+          .menu__dishes__item__desc {
+            width: calc(100% - 68px);
+          }
         }
-      }
-    }
 
-    a {
-      display: block;
-      text-align: center;
-      max-width: 220px;
-      margin: 55px auto 0;
-    }
-
-    .dish:hover .checked-icon {
-      transform: translateX(-80px);
-    }
-    /* not working */
-    .dish:hover i {
-      animation: rotate 300ms 50ms both;
-    }
-
-    .dish:hover .card-cont {
-      width: calc(100% - 68px);
-    }
-
-    // .dish:hover .price {
-    //   transform: translateX(-80px);
-    // }
-
-    .card-cont {
-      display: flex;
-      width: 100%;
-      overflow: hidden;
-      transition: width 300ms;
-
-      & > * {
-        min-width: 0;
-        min-height: 0;
-        overflow: hidden;
-      }
-      &__desc {
-        display: flex;
-        flex-direction: column;
-
-        & > * {
-          min-width: 0;
-          min-height: 0;
+        &__desc {
+          display: flex;
+          width: 100%;
           overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
+          transition: width 300ms;
+
+          & > * {
+            min-width: 0;
+            min-height: 0;
+            overflow: hidden;
+          }
+          & > div {
+            display: flex;
+            flex-direction: column;
+
+            & > * {
+              min-width: 0;
+              min-height: 0;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            h4 {
+              font-size: 18px;
+            }
+
+            p {
+              font-size: 16px;
+              font-weight: 300;
+              padding: 5px 0 0 0;
+            }
+          }
+
+          &__price {
+            align-self: flex-end;
+            margin-left: auto;
+            font-weight: bold;
+            transition: all 300ms;
+          }
+        }
+
+        &__checked-icon {
+          position: absolute;
+          top: 0;
+          right: -80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $tertiary-color;
+          height: 100%;
+          width: 80px;
+          transition: transform 300ms;
+
+          i {
+            font-size: 25px;
+            color: #fff;
+          }
         }
       }
-      &__price {
-        align-self: flex-end;
-        margin-left: auto;
-        font-weight: bold;
-        transition: all 300ms;
-      }
     }
-  }
-
-  // .dish > div {
-  //   white-space: nowrap;
-  //   text-overflow: ellipsis;
-  // }
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(40px) rotate(90deg);
-  }
-  100% {
-    transform: translate(0) rotate(720deg);
   }
 }
