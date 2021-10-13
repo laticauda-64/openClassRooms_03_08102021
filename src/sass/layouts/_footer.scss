@@ -1,28 +1,28 @@
-footer {
+.footer {
   background-color: $light-black;
   color: #fff;
 
-  .title {
-    font-family: $font-logo;
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-
-  a {
-    color: #fff;
-  }
-
-  ul {
+  &__list {
     padding: 20px;
-  }
 
-  li {
-    padding: 4px 0;
-  }
+    &__title {
+      font-family: $font-logo;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
 
-  i {
-    width: 20px;
-    font-size: 14px;
-    margin-right: 5px;
+    & > li {
+      padding: 4px 0;
+
+      a {
+        color: #fff;
+
+        i {
+          width: 20px;
+          font-size: 14px;
+          margin-right: 5px;
+        }
+      }
+    }
   }
 }
