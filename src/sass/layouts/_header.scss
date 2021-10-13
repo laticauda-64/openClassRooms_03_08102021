@@ -1,19 +1,19 @@
-header {
+.header {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  i {
+  & i {
     font-size: 25px;
   }
 
-  .nav {
+  &__nav {
     position: absolute;
     left: 20px;
   }
 
-  .logo {
+  &__logo {
     display: flex;
     align-items: center;
     justify-content: center;
