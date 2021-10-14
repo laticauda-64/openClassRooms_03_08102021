@@ -1,0 +1,5 @@
+@mixin for-small-screen-phone-only {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
