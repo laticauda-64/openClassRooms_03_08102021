@@ -7,4 +7,10 @@
   background: linear-gradient(#ff7ad9, #9256dc);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   text-align: center;
+
+  &:hover {
+    filter: brightness(110%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+    transition: all 0.25s ease-out;
+  }
 }
