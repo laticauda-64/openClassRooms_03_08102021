@@ -2,7 +2,7 @@
 
 .heart-icon {
   :hover {
-    animation: bumping-heart 1s ease 1;
+    // animation: bumping-heart 1s ease 1;
   }
   :hover::before {
     cursor: pointer;

@@ -110,6 +110,11 @@ main > * {
       box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
       border-radius: 15px;
       width: 100%;
+      transition: box-shadow 0.35s ease-out;
+
+      &:hover {
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.45);
+      }
 
       a {
         display: block;
