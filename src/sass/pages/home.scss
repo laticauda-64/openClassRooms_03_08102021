@@ -34,6 +34,11 @@ main > * {
   align-items: flex-start;
   padding: 40px 20px;
 
+  @include desktop {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   &__list {
     width: 100%;
     padding: 30px 10px 10px;
@@ -41,7 +46,17 @@ main > * {
     flex-direction: column;
     row-gap: 25px;
 
+    @include desktop {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     &__item {
+      @include desktop {
+        width: 30%;
+      }
+
       a {
         position: relative;
         display: flex;
@@ -96,6 +111,11 @@ main > * {
   &__title {
     margin-bottom: 20px;
     align-self: flex-start;
+
+    @include desktop {
+      width: 70%;
+      margin: 0 auto 20px;
+    }
   }
 
   &__list {
@@ -104,6 +124,14 @@ main > * {
     align-items: center;
     width: 100%;
 
+    @include desktop {
+      width: 70%;
+      margin: 0 auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
     &__card {
       position: relative;
       margin-bottom: 20px;
@@ -111,6 +139,10 @@ main > * {
       border-radius: 15px;
       width: 100%;
       transition: box-shadow 0.35s ease-out;
+
+      @include desktop {
+        width: 47%;
+      }
 
       &:hover {
         box-shadow: 0 2px 15px rgba(0, 0, 0, 0.45);
