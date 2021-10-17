@@ -1,0 +1,16 @@
+@import "../utils/reset";
+@import "../utils/variables";
+@import "../layouts/header";
+@import "../layouts/footer";
+@import "../layouts/forms";
+@import "../components/color-button";
+@import "../components/heart-icon";
+@import "../components/animations/rotate";
+@import "../components/animations/pop_up-item";
+@import "../mixins/mixins";
+
+body {
+  font-family: $font-text;
+  display: flex;
+  flex-direction: column;
+}
