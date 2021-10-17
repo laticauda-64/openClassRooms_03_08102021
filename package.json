@@ -21,11 +21,15 @@
     "to-regex-range": "^5.0.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
     "sass": "^1.42.1"
   },
   "scripts": {
     "test": "éparé à l’avance.",
-    "sass": "sass --watch ./src/sass/:./public/css/ --style=compressed --no-source-map"
+    "sass": "sass --watch ./src/sass/:./public/css/ --style=compressed --no-source-map",
+    "prefix": "postcss ./public/css/pages/ --use autoprefixer --replace"
   },
   "repository": {
     "type": "git",
@@ -42,5 +46,6 @@
   "bugs": {
     "url": "https://github.com/laticauda-64/yoannboyditlassablere_3_08102021/issues"
   },
-  "homepage": "https://github.com/laticauda-64/yoannboyditlassablere_3_08102021#readme"
+  "homepage": "https://github.com/laticauda-64/yoannboyditlassablere_3_08102021#readme",
+  "browserslist": "last 4 versions"
 }
