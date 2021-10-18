@@ -1,24 +1,24 @@
 .header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & i {
-    font-size: 25px;
-  }
-
-  &__nav {
-    position: absolute;
-    left: 20px;
-  }
-
-  &__logo {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 0;
-    font-family: $font-logo;
-    font-size: 30px;
-  }
+
+    & i {
+        font-size: 25px;
+    }
+
+    &__nav {
+        position: absolute;
+        left: 20px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        font-family: $font-logo;
+        font-size: 30px;
+    }
 }

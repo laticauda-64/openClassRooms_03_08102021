@@ -1,27 +1,27 @@
 // Search select form
 
 .search {
-  align-items: center;
-  justify-content: center;
-  padding: 15px 0;
-  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.25);
 
-  &__form {
-    i {
-      margin-left: 25px;
+    &__form {
+        i {
+            margin-left: 25px;
+        }
+        &__select {
+            padding-left: 5px;
+            appearance: none;
+            border: none;
+
+            &--gray {
+                background-color: $gray;
+            }
+        }
     }
-    &__select {
-      padding-left: 5px;
-      appearance: none;
-      border: none;
 
-      &--gray {
+    &--gray {
         background-color: $gray;
-      }
     }
-  }
-
-  &--gray {
-    background-color: $gray;
-  }
 }

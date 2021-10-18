@@ -1,16 +1,16 @@
-@import "../utils/reset";
-@import "../utils/variables";
-@import "../utils/mixins/mixins";
-@import "../layouts/header";
-@import "../layouts/footer";
-@import "../layouts/forms";
-@import "../components/color-button";
-@import "../components/heart-icon";
-@import "../components/animations/rotate";
-@import "../components/animations/pop_up-item";
+@import '../utils/reset';
+@import '../utils/variables';
+@import '../utils/mixins/mixins';
+@import '../layouts/header';
+@import '../layouts/footer';
+@import '../layouts/forms';
+@import '../components/color-button';
+@import '../components/heart-icon';
+@import '../components/animations/rotate';
+@import '../components/animations/pop_up-item';
 
 body {
-  font-family: $font-text;
-  display: flex;
-  flex-direction: column;
+    font-family: $font-text;
+    display: flex;
+    flex-direction: column;
 }

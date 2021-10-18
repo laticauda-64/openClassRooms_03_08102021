@@ -1,147 +1,147 @@
 // Spinner qui apparait sur la page d'acceuil
 
 .loading-spinner {
-  background: hsla(0, 0, 0, 0.35);
-  width: 0;
-  height: 0;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: loading-spinner 3s backwards;
+    background: hsla(0, 0, 0, 0.35);
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: loading-spinner 3s backwards;
 }
 
 @keyframes loading-spinner {
-  from {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-  }
-  15% {
-    opacity: 1;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-  }
+    from {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+    15% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .multi-dot {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
 
-  div {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #fff;
-    animation: lds-grid 1.2s linear infinite;
+    div {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #fff;
+        animation: lds-grid 1.2s linear infinite;
 
-    &:nth-child(1) {
-      top: 8px;
-      left: 8px;
-      animation-delay: 0s;
-      background-color: $primary-color;
-    }
+        &:nth-child(1) {
+            top: 8px;
+            left: 8px;
+            animation-delay: 0s;
+            background-color: $primary-color;
+        }
 
-    &:nth-child(2) {
-      top: 8px;
-      left: 32px;
-      animation-delay: -0.4s;
-      background-color: $secondary-color;
-    }
+        &:nth-child(2) {
+            top: 8px;
+            left: 32px;
+            animation-delay: -0.4s;
+            background-color: $secondary-color;
+        }
 
-    &:nth-child(3) {
-      top: 8px;
-      left: 56px;
-      animation-delay: -0.8s;
-      background-color: $tertiary-color;
-    }
+        &:nth-child(3) {
+            top: 8px;
+            left: 56px;
+            animation-delay: -0.8s;
+            background-color: $tertiary-color;
+        }
 
-    &:nth-child(4) {
-      top: 32px;
-      left: 8px;
-      animation-delay: -0.4s;
-      background-color: $secondary-color;
-    }
+        &:nth-child(4) {
+            top: 32px;
+            left: 8px;
+            animation-delay: -0.4s;
+            background-color: $secondary-color;
+        }
 
-    &:nth-child(5) {
-      top: 32px;
-      left: 32px;
-      animation-delay: -0.8s;
-      background-color: $tertiary-color;
-    }
+        &:nth-child(5) {
+            top: 32px;
+            left: 32px;
+            animation-delay: -0.8s;
+            background-color: $tertiary-color;
+        }
 
-    &:nth-child(6) {
-      top: 32px;
-      left: 56px;
-      animation-delay: -1.2s;
-      background-color: $primary-color;
-    }
-    &:nth-child(7) {
-      top: 56px;
-      left: 8px;
-      animation-delay: -0.8s;
-      background-color: $primary-color;
-    }
+        &:nth-child(6) {
+            top: 32px;
+            left: 56px;
+            animation-delay: -1.2s;
+            background-color: $primary-color;
+        }
+        &:nth-child(7) {
+            top: 56px;
+            left: 8px;
+            animation-delay: -0.8s;
+            background-color: $primary-color;
+        }
 
-    &:nth-child(8) {
-      top: 56px;
-      left: 32px;
-      animation-delay: -1.2s;
-      background-color: $tertiary-color;
+        &:nth-child(8) {
+            top: 56px;
+            left: 32px;
+            animation-delay: -1.2s;
+            background-color: $tertiary-color;
+        }
+        &:nth-child(9) {
+            top: 56px;
+            left: 56px;
+            animation-delay: -1.6s;
+            background-color: $secondary-color;
+        }
     }
-    &:nth-child(9) {
-      top: 56px;
-      left: 56px;
-      animation-delay: -1.6s;
-      background-color: $secondary-color;
-    }
-  }
 }
 
 @keyframes lds-grid {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
 }
 
 header,
 main,
 footer {
-  animation: blur 3000ms;
+    animation: blur 3000ms;
 }
 body {
-  animation: disable-scroll 3000ms;
+    animation: disable-scroll 3000ms;
 }
 
 @keyframes blur {
-  0% {
-    filter: blur(3px);
-  }
-  91% {
-    filter: blur(3px);
-  }
+    0% {
+        filter: blur(3px);
+    }
+    91% {
+        filter: blur(3px);
+    }
 }
 
 @keyframes disable-scroll {
-  0% {
-    overflow-y: hidden;
-  }
-  91% {
-    overflow-y: hidden;
-  }
-  100% {
-    overflow-y: visible;
-  }
+    0% {
+        overflow-y: hidden;
+    }
+    91% {
+        overflow-y: hidden;
+    }
+    100% {
+        overflow-y: visible;
+    }
 }

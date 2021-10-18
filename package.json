@@ -47,5 +47,13 @@
     "url": "https://github.com/laticauda-64/yoannboyditlassablere_3_08102021/issues"
   },
   "homepage": "https://github.com/laticauda-64/yoannboyditlassablere_3_08102021#readme",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 250,
+    "htmlWhitespaceSensitivity": "ignore"
+  }
 }

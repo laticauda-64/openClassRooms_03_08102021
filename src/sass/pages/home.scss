@@ -1,196 +1,196 @@
-@import "../base/base";
-@import "../components/animations/loading-spinner";
+@import '../base/base';
+@import '../components/animations/loading-spinner';
 
 main > * {
-  display: flex;
-  text-align: center;
+    display: flex;
+    text-align: center;
 }
 
 .disclaimer {
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 0;
-  background-color: $light-gray;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    background-color: $light-gray;
 
-  &__title,
-  &__desc {
-    margin: 0 auto;
-  }
+    &__title,
+    &__desc {
+        margin: 0 auto;
+    }
 
-  &__title {
-    width: 65%;
-  }
+    &__title {
+        width: 65%;
+    }
 
-  &__desc {
-    width: 90%;
-    padding: 20px 0;
-    font-weight: 300;
-    font-size: 18px;
-  }
+    &__desc {
+        width: 90%;
+        padding: 20px 0;
+        font-weight: 300;
+        font-size: 18px;
+    }
 }
 
 .guide {
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 40px 20px;
-
-  @include desktop {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  &__list {
-    width: 100%;
-    padding: 30px 10px 10px;
-    display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    align-items: flex-start;
+    padding: 40px 20px;
 
     @include desktop {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
     }
 
-    &__item {
-      @include desktop {
-        width: 30%;
-      }
-
-      a {
-        position: relative;
+    &__list {
+        width: 100%;
+        padding: 30px 10px 10px;
         display: flex;
-        align-items: center;
-        font-weight: 500;
-        padding: 25px 15px;
-        background-color: $light-gray;
-        border-radius: 20px;
-        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+        flex-direction: column;
+        row-gap: 25px;
 
-        &:hover {
-          background-color: $primary-color-light;
-          i {
-            color: $primary-color;
-          }
+        @include desktop {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        @include for-small-screen-phone-only {
-          font-size: 14px;
+        &__item {
+            @include desktop {
+                width: 30%;
+            }
+
+            a {
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                padding: 25px 15px;
+                background-color: $light-gray;
+                border-radius: 20px;
+                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+
+                &:hover {
+                    background-color: $primary-color-light;
+                    i {
+                        color: $primary-color;
+                    }
+                }
+
+                @include for-small-screen-phone-only {
+                    font-size: 14px;
+                }
+            }
+
+            &__icon {
+                position: absolute;
+                left: -11px;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                background-color: $primary-color;
+                border-radius: 50%;
+            }
+
+            i {
+                color: $dark-gray;
+                width: 20px;
+                margin: 0 20px;
+            }
         }
-      }
-
-      &__icon {
-        position: absolute;
-        left: -11px;
-        width: 25px;
-        height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        background-color: $primary-color;
-        border-radius: 50%;
-      }
-
-      i {
-        color: $dark-gray;
-        width: 20px;
-        margin: 0 20px;
-      }
     }
-  }
 }
 
 .results {
-  background-color: $light-gray;
-  flex-direction: column;
-  align-items: center;
-  text-align: initial;
-  padding: 40px 25px 80px;
-
-  &__title {
-    margin-bottom: 20px;
-    align-self: flex-start;
-
-    @include desktop {
-      width: 70%;
-      margin: 0 auto 20px;
-    }
-  }
-
-  &__list {
-    display: flex;
+    background-color: $light-gray;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    text-align: initial;
+    padding: 40px 25px 80px;
 
-    @include desktop {
-      width: 70%;
-      margin: 0 auto;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
+    &__title {
+        margin-bottom: 20px;
+        align-self: flex-start;
+
+        @include desktop {
+            width: 70%;
+            margin: 0 auto 20px;
+        }
     }
 
-    &__card {
-      position: relative;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-      border-radius: 15px;
-      width: 100%;
-      transition: box-shadow 0.35s ease-out;
-
-      @include desktop {
-        width: 47%;
-      }
-
-      &:hover {
-        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.45);
-      }
-
-      a {
-        display: block;
-
-        img {
-          border-top-left-radius: 15px;
-          border-top-right-radius: 15px;
-          max-height: 200px;
-          width: 100%;
-        }
-      }
-
-      &__desc {
-        background-color: #fff;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+    &__list {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        padding: 15px;
+        width: 100%;
 
-        &__title {
-          font-size: 18px;
-          margin-bottom: 5px;
+        @include desktop {
+            width: 70%;
+            margin: 0 auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
-        &__location {
-          font-weight: 300;
-        }
-      }
-    }
+        &__card {
+            position: relative;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            width: 100%;
+            transition: box-shadow 0.35s ease-out;
 
-    &__card.new::before {
-      content: "Nouveau";
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      background-color: $tertiary-color;
-      color: $green;
-      font-family: $font-text;
-      font-size: 14px;
-      font-weight: 500;
-      padding: 7px 10px;
-      border-radius: 2px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+            @include desktop {
+                width: 47%;
+            }
+
+            &:hover {
+                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.45);
+            }
+
+            a {
+                display: block;
+
+                img {
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    max-height: 200px;
+                    width: 100%;
+                }
+            }
+
+            &__desc {
+                background-color: #fff;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                display: flex;
+                align-items: center;
+                padding: 15px;
+
+                &__title {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+
+                &__location {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        &__card.new::before {
+            content: 'Nouveau';
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background-color: $tertiary-color;
+            color: $green;
+            font-family: $font-text;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 7px 10px;
+            border-radius: 2px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+        }
     }
-  }
 }
